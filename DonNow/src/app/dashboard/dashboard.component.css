@@ -1,0 +1,126 @@
+body {
+  background: rgb(99, 39, 120)
+}
+
+.profile-button {
+  background: rgb(253, 253, 253); /* Couleur de fond par défaut */
+  box-shadow: none;
+  border: #063970 1px solid; /* Bordure par défaut */
+  color: #063970; /* Couleur de texte par défaut */
+  transition: all 0.3s ease; /* Animation douce pour les changements de style */
+}
+
+.profile-button:hover {
+  background: #063970; /* Couleur de fond au survol */
+  color: white; /* Couleur du texte au survol */
+}
+
+.profile-button:focus {
+  background: #063970; /* Couleur de fond au focus */
+  color: white; /* Couleur du texte au focus */
+  box-shadow: none;
+}
+
+.profile-button:active {
+  background: #063970; /* Couleur de fond lorsqu'on clique */
+  color: white; /* Couleur de texte lorsqu'on clique */
+  box-shadow: none;
+}
+
+
+.back:hover {
+  color: #064F9EFF;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 11px
+}
+
+.add-experience:hover {
+  background: #064F9EFF;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #064F9EFF
+}
+textarea {
+  width: 100%; /* Ajustez à la largeur du conteneur */
+  height: 120px; /* Définissez la hauteur selon vos besoins */
+  resize: vertical; /* Permettre seulement un redimensionnement vertical */
+}
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out; /* Popup overlay animation */
+}
+
+.popup-content {
+  background: #fff;
+  padding: 5px;
+  border-radius: 15px; /* More rounded corners */
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  height: 150px; /* Increased height for a more spacious design */
+
+  /* Gradient border styling */
+  border: 3px solid transparent;
+  border-radius: 12px; /* Rounded corners */
+  background-image: linear-gradient(white, white), linear-gradient(to right, #063970, #FE5630);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  /* Subtle scaling effect on show */
+  transform: scale(0.9);
+  animation: popupScaleUp 0.4s ease-out forwards;
+}
+
+.popup-content p {
+  margin: 0 0 20px;
+  font-size: 20px; /* Slightly larger text for emphasis */
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+}
+
+.popup-content .btn {
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px; /* Fully rounded button */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+
+.popup-content .btn:active {
+  transform: translateY(1px); /* Button press effect */
+}
+
+/* Animation for the popup content */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes popupScaleUp {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+

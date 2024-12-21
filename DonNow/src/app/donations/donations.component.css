@@ -1,0 +1,134 @@
+.card.card.bg-light-subtle .card-title {
+  color: dimgrey;
+}
+body {
+  background-color: mintcream;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.card {
+  max-width: 90%;
+  flex-direction: row;
+  background-color: #696969;
+  border: 0;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.18);
+  margin: 3em auto;
+}
+.card.dark {
+  color: #fff;
+}
+.card.card.bg-light-subtle .card-title {
+  color: dimgrey;
+}
+
+.card img {
+  max-width: 25%;
+  margin: auto;
+  padding: 0.5em;
+  border-radius: 0.7em;
+}
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+.text-section {
+  max-width: 60%;
+}
+.cta-section {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.cta-section .btn {
+  padding: 0.3em 0.5em;
+  /* color: #696969; */
+}
+.card.bg-light-subtle .cta-section .btn {
+  border-color: #898989;
+}
+@media screen and (max-width: 475px) {
+  .card {
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out; /* Popup overlay animation */
+}
+
+.popup-content {
+  background: #fff;
+  padding: 5px;
+  border-radius: 15px; /* More rounded corners */
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  height: 150px; /* Increased height for a more spacious design */
+
+  /* Gradient border styling */
+  border: 3px solid transparent;
+  border-radius: 12px; /* Rounded corners */
+  background-image: linear-gradient(white, white), linear-gradient(to right, #063970, #FE5630);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  /* Subtle scaling effect on show */
+  transform: scale(0.9);
+  animation: popupScaleUp 0.4s ease-out forwards;
+}
+
+.popup-content p {
+  margin: 0 0 20px;
+  font-size: 20px; /* Slightly larger text for emphasis */
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+}
+
+.popup-content .btn {
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px; /* Fully rounded button */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+
+.popup-content .btn:active {
+  transform: translateY(1px); /* Button press effect */
+}
+
+/* Animation for the popup content */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes popupScaleUp {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+

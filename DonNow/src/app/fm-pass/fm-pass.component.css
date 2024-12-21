@@ -1,0 +1,207 @@
+.full-height {
+  height: 100vh;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+.zz{
+  background-color: #d3e4f6;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-5 {
+  padding: 20px;
+}
+
+.logo {
+  max-width: 150px; /* Adjust the size of the logo */
+  display: block;
+  margin: 0 auto;
+}
+
+.col-form-label{
+  color: #063970;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="file"],
+input[type="tel"],
+textarea,
+input[type="password"] {
+  border: none;
+  border-bottom: 2px solid #ccc; /* Gray underline */
+  border-radius: 0;
+  outline: none;
+  padding: 5px 0;
+  width: 100%;
+  font-family: 'Calibri', sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus,
+input[type="file"]:focus,
+textarea,
+input[type="password"]:focus {
+  border-bottom-color: #063970; /* Blue underline on focus */
+}
+
+.p{
+  border-color: #063970;
+  background-color: #063970;
+  color: #fff;
+}
+
+
+
+.form-label {
+  margin-bottom: 5px;
+  background-color: #FFFFFF;
+}
+
+/* Fixed width for the form container */
+.form-container {
+  background-color: #FFFFFF;
+  font-weight: bold;
+  width: 100%;
+  max-width:  100%; /* Set maximum width */
+  margin: 0 auto;
+}
+
+h3.h3 {
+  font-family: 'Roca One', sans-serif; /* Apply Roca One Bold */
+  font-weight: bold; /* Ensure bold weight is applied */
+  color: #063970; /* Set default color */
+}
+.full-height {
+  height: 100vh;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.zz {
+  background-color: #d3e4f6;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-bottom-color: #063970;
+}
+
+.p {
+  background-color: #063970;
+  color: white;
+  border: none;
+}
+
+.p:hover {
+  background-color: #084a8a;
+}
+
+
+
+
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly darker overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease-in-out; /* Popup overlay animation */
+}
+
+.popup-content {
+  background: #fff;
+  padding: 5px;
+  border-radius: 15px; /* More rounded corners */
+  text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  height: 150px; /* Increased height for a more spacious design */
+
+  /* Gradient border styling */
+  border: 3px solid transparent;
+  border-radius: 12px; /* Rounded corners */
+  background-image: linear-gradient(white, white), linear-gradient(to right, #063970, #FE5630);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  /* Subtle scaling effect on show */
+  transform: scale(0.9);
+  animation: popupScaleUp 0.4s ease-out forwards;
+}
+
+.popup-content p {
+  margin: 0 0 20px;
+  font-size: 20px; /* Slightly larger text for emphasis */
+  font-weight: 600;
+  color: #333;
+  line-height: 1.4;
+}
+
+.popup-content .btn {
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 15px; /* Fully rounded button */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+
+
+.popup-content .btn:active {
+  transform: translateY(1px); /* Button press effect */
+}
+
+/* Animation for the popup content */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes popupScaleUp {
+  0% { transform: scale(0.9); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
